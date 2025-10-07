@@ -296,45 +296,33 @@ Finally, we find many interesting properties of test-time RL for VLMs: for examp
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+<!-- Method Section -->
+<section class="section" id="method">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Method</h2>
+    <figure>
+      <img src="static/images/TTRV-main_table_final.png" alt="Method Overview" style="width:100%;">
+      <p class="caption">Overview of TTRV. For each prompt x, the VLM generates N candidate responses.  
+    These samples induce an empirical distribution over the unique outputs, from which two reward signals are derived:  
+    (i) a frequency-based reward, where each response $y_j$ is rewarded in proportion to how often its output occurs among the $N$ responses (\ie its empirical probability in the distribution), and  
+    (ii) a diversity control reward, computed from the distribution to regulate diversity and encourage convergence.  
+The final reward is the weighted combination of these terms, which is used to update the policy via GRPO.</p>
+    </figure>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End Method Section -->
+
+<!-- Result Section -->
+<section class="section" id="result">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Results</h2>
+    <figure>
+      <img src="static/images/result_ttrv.png" alt="Experimental Results" style="width:90%;">
+      <!-- <p class="caption">Figure 2: Qualitative results comparing our method against baseline approaches. Our approach achieves more accurate and consistent predictions.</p> -->
+    </figure>
+  </div>
+</section>
+<!-- End Result Section -->
 
 
 
