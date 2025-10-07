@@ -301,10 +301,10 @@ Finally, we find many interesting properties of test-time RL for VLMs: for examp
   <div class="container is-max-desktop content">
     <h2 class="title">Method</h2>
     <figure>
-      <img src="static/images/TTRV-main_table_final.png" alt="Method Overview" style="width:100%;">
-      <p class="caption">Overview of TTRV. For each prompt x, the VLM generates N candidate responses.  
+      <img src="static/images/TTRV-main_table_final.png" alt="Method Overview" style="width:80%;">
+      <p>Overview of TTRV. For each prompt x, the VLM generates N candidate responses.  
     These samples induce an empirical distribution over the unique outputs, from which two reward signals are derived:  
-    (i) a frequency-based reward, where each response $y_j$ is rewarded in proportion to how often its output occurs among the $N$ responses (\ie its empirical probability in the distribution), and  
+    (i) a frequency-based reward, where each response is rewarded in proportion to how often its output occurs among the N responses (ie its empirical probability in the distribution), and  
     (ii) a diversity control reward, computed from the distribution to regulate diversity and encourage convergence.  
 The final reward is the weighted combination of these terms, which is used to update the policy via GRPO.</p>
     </figure>
